@@ -544,6 +544,10 @@ and specify -1 to let Sunny decide for you.</source>
         <source>Youdao</source>
         <translation>有道</translation>
     </message>
+    <message>
+        <source>Next Page</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Tray</name>

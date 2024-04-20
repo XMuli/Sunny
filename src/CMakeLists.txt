@@ -12,7 +12,7 @@ set(project_version_path 0)
 set(project_version ${project_version_major}.${project_version_minor}.${project_version_path})
 project(${project_name} VERSION ${project_version} LANGUAGES CXX)
 
-add_definitions(-DXBUILD_TIME="2024.04.15")
+add_definitions(-DXBUILD_TIME="2024.04.18")
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -51,6 +51,8 @@ set(commom_files
     data/configjson.cpp
     ${CMAKE_SOURCE_DIR}/tripartite/include/qt_aes/qaesencryption.h
     ${CMAKE_SOURCE_DIR}/tripartite/include/qt_aes/qaesencryption.cpp
+#    ${CMAKE_SOURCE_DIR}/tripartite/include/easyloggingpp/easylogging++.h
+#    ${CMAKE_SOURCE_DIR}/tripartite/include/easyloggingpp/easylogging++.cc
 )
 
 set(custom_ui_files
@@ -162,6 +164,7 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/ui/include")                   
 include_directories("${CMAKE_SOURCE_DIR}/tripartite/QHotkey")
 include_directories("${CMAKE_SOURCE_DIR}/tripartite/include/json")
 include_directories("${CMAKE_SOURCE_DIR}/tripartite/include/qt_aes")
+include_directories("${CMAKE_SOURCE_DIR}/tripartite/include/easyloggingpp")
 
 
 #********************************************** 判断且定义 x64/x86 变量 (get kit architecture bit) ****************************
@@ -231,8 +234,10 @@ endforeach()
 
 if(APPLE)
     file(COPY "${CMAKE_SOURCE_DIR}/xconfig.json" DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${project_name}.app/Contents/MacOS")
+    file(COPY "${CMAKE_SOURCE_DIR}/log.conf" DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${project_name}.app/Contents/MacOS")
 else()
     file(COPY "${CMAKE_SOURCE_DIR}/xconfig.json" DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")  # windows and linux
+    file(COPY "${CMAKE_SOURCE_DIR}/log.conf" DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
     file(COPY "${source_root}/debian" DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 endif()
 
@@ -328,7 +333,8 @@ target_include_directories(${project_name} PRIVATE                              
     ${CMAKE_CURRENT_SOURCE_DIR}/ui/commom/communication
     ${CMAKE_CURRENT_SOURCE_DIR}/../windows_rect/include
 )
-target_compile_definitions(${project_name} PRIVATE XWIDGET_LIBRARY UNICODE _UNICODE)                         # 定义 XWIDGET_LIBRARY 宏( ET 后面没有 S)，表明为导出。后期将导出为 动态库 封装
+target_compile_definitions(${project_name} PRIVATE XWIDGET_LIBRARY UNICODE _UNICODE ELPP_QT_LOGGING #[[ELPP_UNICODE]])                         # 定义 XWIDGET_LIBRARY 宏( ET 后面没有 S)，表明为导出。后期将导出为 动态库 封装; # ELPP_QT_LOGGIN 是 easylogging++ 输出 qt 的宏
+
 
 set_target_properties(${project_name} PROPERTIES
     ${BUNDLE_ID_OPTION}
@@ -453,10 +459,19 @@ elseif (UNIX)
              DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo"
              )
     # [/usr/local] -------------------------
+    # install $ENV{HOME}/.config/Sunny/xconfig.json by exe write
     # install /usr/local/Sunny/xconfig.json
-    install (FILES ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/xconfig.json
-             DESTINATION "/usr/local/${project_name}"
-             )
+
+    # 添加安装规则来删除文件
+    install(FILES "$ENV{HOME}/.config/Sunny/xconfig.json"
+            DESTINATION /tmp
+            COMPONENT config
+            EXCLUDE_FROM_ALL
+            )
+
+#    install (FILES ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/xconfig.json
+#        DESTINATION "/usr/local/${project_name}"
+#        )
     # install /usr/local/Sunny/translations/Sunny_*.qm
     install (DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/translations
              DESTINATION "/usr/local/${project_name}"
@@ -485,7 +500,6 @@ elseif (UNIX)
     message("---------->LIBRARY:" ${LIBRARY})
     message("---------->ARCHIVE:" ${ARCHIVE})
     message("---------->CMAKE_INSTALL_BINDIR:" ${CMAKE_INSTALL_BINDIR})
-    message("---------->CMAKE_INSTALL_LIBDIR:" ${CMAKE_INSTALL_LIBDIR})
     message("---------->CMAKE_INSTALL_LIBDIR:" ${CMAKE_INSTALL_LIBDIR})
     message("---------->qm:" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/translations")
 

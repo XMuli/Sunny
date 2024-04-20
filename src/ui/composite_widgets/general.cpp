@@ -25,6 +25,7 @@ General::~General()
     delete ui;
 }
 
+
 void General::initUI()
 {
     const auto& languages = languageMap();
@@ -51,9 +52,10 @@ void General::initUI()
     ui->cbAutostart->setChecked(CJ_GET("general.autostart").get<bool>());
     ui->btnFont->resize(ui->cbbLanguage->size());
 
-#if defined(Q_OS_WIN)
-#else
+#if defined(Q_OS_MACOS)
     ui->cbAutostart->hide();
+#else
+
 #endif
 
     connect(ui->cbbLanguage, &QComboBox::currentTextChanged, this, &General::onCbbLanguageCurrentTextChanged);
@@ -70,6 +72,20 @@ void General::setAutoStart(const bool &enable)
         reg.setValue(XPROJECT_NAME, strAppPath);
     } else {
         reg.setValue(XPROJECT_NAME, "");
+    }
+#elif defined (Q_OS_LINUX)
+    // *.desktop 复制到 "~/.config/autostart/" 目录下实现开机自启动
+    const QString desktopDir = "/usr/share/applications/tech.xmuli.sunny.desktop";
+    const QString targetDir = QDir::homePath() + "/.config/autostart/";
+    const QString targetFile = targetDir + "tech.xmuli.sunny.desktop";
+
+    if (enable) {
+        QDir().mkpath(targetDir);    // 创建目标目录（如果不存在）
+        if (QFile::copy(desktopDir, targetFile)) qDebug() << "File tech.xmuli.sunny.desktop copied successfully to" << targetFile;
+        else qDebug() << "Failed to copy file";
+    } else {
+        if (QFile::remove(targetFile)) qDebug() << "File removed successfully from" << targetFile;
+        else qDebug() << "Failed tech.xmuli.sunny.desktop to remove file";
     }
 #else
 #endif

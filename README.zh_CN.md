@@ -1,7 +1,50 @@
 # Sunny
 
-[English](README.md)
+<p align="right"><a href="README.zh_CN.md">简体中文</a> · <a href="README.md">English</a></p>
 
-> **Sunny 是早期的截图工具。** [官网](https://sunny.xmuli.tech/zh-cn/) · [源码](https://github.com/XMuli/Sunny) · [SnipArc 下载](https://sniparc.mosuzo.com/zh-cn/download)
+<p><img alt="archived" src="https://img.shields.io/badge/status-archived-6b7280?logo=github&logoColor=white"> <img alt="2.x" src="https://img.shields.io/badge/generation-2.x-c78a3c"> <img alt="OCR" src="https://img.shields.io/badge/OCR-offline-6f42c1"> <img alt="translation" src="https://img.shields.io/badge/translation-20%2B%20languages-0f766e"> <img alt="Qt" src="https://img.shields.io/badge/Qt-41CD52?logo=qt&logoColor=white"> <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white"> <img alt="Windows" src="https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white"> <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white"> <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black"> <img alt="stars" src="https://img.shields.io/github/stars/XMuli/Sunny?style=flat&logo=github&label=stars"></p>
 
-Sunny 的历史源码和提交记录已整理到本仓库。[版本标签](https://github.com/XMuli/Sunny/tags) · [历史发布](https://github.com/SunnyCapturer/Sunny/releases) · [原始构建笔记](BUILD.md)
+> **已归档。** Sunny 2.x 把离线 OCR 与图片翻译带进了截图流程。
+>
+> Sunny **2.x** · Qt / C++ · Windows、macOS、Linux
+
+![Sunny 界面](assets/readme-sunny.png)
+
+## 简介
+
+Sunny 是系列的第三代：重新设计的界面，把图片里的文字也纳入截图流程。框选、提取文字，或者直接翻译，不需要把图片上传到服务器。
+
+现在网站与原项目源码历史合并在本仓库中，项目页与代码档案可以一起维护。
+
+## 亮点
+
+- 截图、标注、贴图与编辑
+- 离线 OCR 提取图片文字
+- 支持 20+ 语言的图片翻译
+- 亚克力工具栏与富文本标注
+- 全新 UI/UX，设置面板无缝衔接
+- 上架 Microsoft Store、深度/统信商店与星火商店
+
+## 状态
+
+Sunny 已归档。Windows 用户可以继续使用 **SnipArc**。
+
+## 链接
+
+| | |
+| --- | --- |
+| **项目归档页** | https://sunny.xmuli.tech/ |
+| **作品档案条目** | https://screenshot-archive.xmuli.tech/sunny/ |
+| **源码** | https://github.com/XMuli/Sunny |
+| **标签** | https://github.com/XMuli/Sunny/tags |
+
+## 截图作品系列
+
+ShotX → FLIPPED → Sunny → SunnyCapturer → SnipArc。  
+[完整作品档案](https://screenshot-archive.xmuli.tech/)
+
+## 联系
+
+- **Mosuzo 工作室** — https://mosuzo.com/
+- **个人 GitHub** — https://github.com/XMuli
+- **QQ 反馈群** — 418103279 · https://qm.qq.com/q/ff0xkauRdm

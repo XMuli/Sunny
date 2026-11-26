@@ -14,7 +14,7 @@ SunnyCapturer 是一款简单且漂亮的跨平台截图软件工具，支持 OC
 
 <br>
 
-- Official Website & Download  & Doc | 官网 & 下载 & 用户手册：[http://sunnycapturer.xmuli.tech](http://sunnycapturer.xmuli.tech/)
+- Official Website & Download  & Doc | 官网 & 下载 & 用户手册：[http://sunnycapturer.xmuli.tech](https://sunnycapturer.xmuli.tech/)
 
 - open source Code | 代码开源：[https://github.com/SunnyCapturer](https://github.com/SunnyCapturer)
 

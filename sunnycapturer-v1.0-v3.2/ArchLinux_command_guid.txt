@@ -1,0 +1,17 @@
+ArchLinux 安装于2025.01.25， 此时里面的 qt 6.8
+
+# 安装依赖
+pacman -S qt6-base git gitg cmake
+
+# 得到的路径
+qt6-base /usr/lib/qt6/bin/qmake
+qt6-base /usr/lib/qt6/bin/qmake6
+qt6-tools /usr/lib/qt6/bin/lrelease
+qt6-tools /usr/lib/qt6/bin/lupdate
+
+makepkg -s                                                        # 使用 PKGBUILD 进行构建 .pkg.tar.zst 
+bsdtar -tf sunnycapturer-3.1.2-1-x86_64.pkg.tar.zst               # 查看这个包安装后的文件都放在哪里
+
+$ sudo pacman -U ./sunnycapturer-3.1.2-1-x86_64.pkg.tar.zst       # 安装
+$ SunnyCapturer                                                   # 运行
+$ sudo pacman -R sunnycapturer                                    # 卸载

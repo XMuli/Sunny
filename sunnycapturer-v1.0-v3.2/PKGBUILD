@@ -1,0 +1,49 @@
+# Maintainer: XMuli <xmulitech@gmail.com>
+pkgname=sunnycapturer
+mypkgfoldername=SunnyCapturer
+pkgver=3.2.0
+pkgrel=1
+pkgdesc="Simple and beautiful cross-platform screenshot software that supports OCR for extracting text from images, image translation, custom stickers, and pinning images to the screen."
+arch=('x86_64')
+url="https://sunnycapturer.xmuli.tech"
+license=('custom')
+depends=('qt6-base' 'qt6-svg')
+makedepends=('cmake' 'dos2unix')
+source=()
+sha256sums=()  # 忽略sha256校验，或根据实际情况提供
+
+build() {
+    # 假设构建结果存放在 bin 目录
+    pwd
+    cd "$srcdir/../"
+    pwd
+    rm -rf bin
+    mkdir bin
+    cd bin
+    pwd
+    cmake -DCMAKE_BUILD_TYPE=Release ..
+    make -j16
+}
+
+# 如果源代码不可用，只提供二进制文件
+package() {
+    # 假设构建结果存放在 bin 目录
+    pwd
+    cd "$srcdir/../bin"
+    pwd
+    
+    # 你需要将已编译好的二进制文件复制到目标目录
+    install -Dm755 ./$mypkgfoldername "$pkgdir/usr/bin/$mypkgfoldername"
+
+
+    # 递归复制 translations 文件夹及其内容
+    mkdir -p "$pkgdir/opt/$mypkgfoldername"
+    cp -r "./translations" "$pkgdir/opt/$mypkgfoldername/"
+
+    pwd 
+    # /usr/share/applications/sunnycapturer.desktop
+    install -Dm755 "./resources/linux_script/sunnycapturer.desktop" "$pkgdir/usr/share/applications/sunnycapturer.desktop"
+
+    # /usr/share/icons/hicolor/scalable/apps/sunnycapturer.svg
+    install -Dm755 "./resources/logo/logo.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/sunnycapturer.svg"
+}

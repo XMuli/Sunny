@@ -1,0 +1,21 @@
+[submodule "3rdparty/glog"]
+	path = 3rdparty/glog
+	url = https://github.com/google/glog.git
+[submodule "3rdparty/fmt"]
+	path = 3rdparty/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "3rdparty/probe"]
+	path = 3rdparty/probe
+	url = https://github.com/ffiirree/probe.git
+[submodule "3rdparty/json"]
+	path = 3rdparty/json
+	url = https://github.com/nlohmann/json.git
+[submodule "3rdparty/QHotkey"]
+	path = 3rdparty/QHotkey
+	url = https://github.com/ffiirree/QHotkey
+[submodule "3rdparty/SingleApplication"]
+	path = 3rdparty/SingleApplication
+	url = https://github.com/itay-grudev/SingleApplication.git
+[submodule "3rdparty/Qt-AES"]
+	path = 3rdparty/Qt-AES
+	url = https://github.com/bricke/Qt-AES.git

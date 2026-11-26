@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Graphics;
+Comment=SunnyCapturer is a simple and beautiful cross-platform screenshot software tool that supports OCR to extract text from images, image translation, and pinning images to the screen, among other features
+Comment[zh_CN]=SunnyCapturer 是一款简单且漂亮的跨平台截图软件工具，支持 OCR 从图片中提取文本，图片翻译，以及将图片钉在屏幕上等功能
+Comment[pt_BR]=SunnyCapturer é uma ferramenta simples e elegante para captura de tela multiplataforma. Ela oferece suporte para OCR para extrair texto de imagens, tradução de imagens e a opção de fixar imagens na tela, entre outras funcionalidades
+Exec=SunnyCapturer
+GenericName=Sunny Capturer
+GenericName[zh_CN]=Sunny Capturer
+GenericName[pt_BR]=Sunny Capturer
+Icon=sunnycapturer
+Keywords=SunnyCapturer;Sunny;Capturer;ScreenShot;Image;Snapshot;XMuli;偕臧;
+MimeType=image/bmp;image/bmp24;image/jpg;image/jpe;image/jpeg;image/jpeg24;image/jng;image/pcd;image/pcx;image/png;image/tif;image/tiff;image/tiff24;image/dds;image/gif;image/sgi;image/j2k;image/jp2;image/pct;image/wdp;image/arw;image/icb;image/dng;image/vda;image/vst;image/svg;image/ptif;image/mef;image/xbm;image/svg+xml;
+Name=SunnyCapturer
+Name[zh_CN]=SunnyCapturer
+Name[pt_BR]=SunnyCapturer
+StartupNotify=false
+Type=Application
+Terminal=false
+X-GNOME-Autostart-enabled=true
+
+

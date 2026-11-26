@@ -1,0 +1,92 @@
+/*///////////////////////////////// Record Menu //////////////////////////////*/
+RecordingMenu QCheckBox::indicator {
+    font-size: 9pt;
+
+    height: 1.35em;
+    width: 1.35em;
+    padding: 0.6em;
+}
+
+RecordingMenu QLabel#time {
+    background-color: transparent;
+    font-family: "Microsoft YaHei";
+    font-size: 10pt;
+
+    padding: 0em 1em 0em 1em;
+}
+
+RecordingMenu QCheckBox#stop-btn::indicator {
+    image: url(:/icons/stop);
+}
+
+/*///////////////////////////////// Edit Menu //////////////////////////////*/
+
+EditingMenu QCheckBox::indicator {
+    font-size: 9pt;
+    
+    height: 1.2em;
+    width: 1.2em;
+    padding: 0.4em;
+}
+
+EditingMenu QCheckBox::indicator::checked {
+    background-color: #409eff;
+}
+
+/*///////////////////////////////// Style Menu //////////////////////////////*/
+EditingSubmenu QCheckBox::indicator {
+    font-size: 9pt;
+
+    height: 1.2em;
+    width: 1.2em;
+    padding: 0.4em;
+}
+
+EditingSubmenu QComboBox {
+    font-size: 9pt;
+    max-width: 7em;
+    min-width: 1em;
+    margin: 0.2em 0.2em;
+}
+
+EditingSubmenu QCheckBox::indicator::checked {
+    background-color: #409eff;
+}
+
+EditingSubmenu WidthButton::indicator:unchecked,
+EditingSubmenu WidthButton::indicator:unchecked:hover,
+EditingSubmenu WidthButton::indicator:unchecked:pressed,
+EditingSubmenu WidthButton::indicator:checked,
+EditingSubmenu WidthButton::indicator:checked:hover,
+EditingSubmenu WidthButton::indicator:checked:pressed {
+    image: none;
+}
+
+EditingSubmenu ColorButton {
+    font-size: 9pt;
+    border-radius: 0px;
+
+    margin: 0.1em;
+    border: 2px solid #bfbfbf;
+    padding: 0px;
+
+    height: 0.6em;
+    width: 0.6em;
+}
+
+EditingSubmenu ColorButton:hover {
+    border: 2px solid #409eff;
+}
+
+EditingSubmenu ColorButton#selected-color {
+    margin: 0.3em;
+    border: 2px solid #bfbfbf;
+    padding: 0px;
+
+    height: 1.3em;
+    width: 1.3em;
+}
+
+EditingSubmenu ColorButton#selected-color:hover {
+    border: 2px solid #409eff;
+}

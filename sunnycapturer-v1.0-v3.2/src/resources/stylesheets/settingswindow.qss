@@ -1,0 +1,36 @@
+SettingWindow QListWidget {
+    padding-top: 1.25em;
+}
+
+SettingWindow QCheckBox#close-btn::indicator {
+    font-size: 8pt;
+    height: 1em;
+    width: 1em;
+
+    padding: 0.75em 1em;
+}
+
+SettingWindow QCheckBox#close-btn::indicator:hover {
+    background-color: #C42B1C;
+    image: url(:/icons/close);
+}
+
+SettingWindow QToolButton#tb_quick_save_change_folder::indicator {
+    background-color: #ff0000;
+    image: url(:/icons/menu_bar/close_dark);
+}
+
+#about-name {
+    font-size: 16pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#about-version {
+    font-size: 10.5pt;
+    font-weight: bold;
+}
+
+#about-feekback {
+    font-size: 9.5pt
+}

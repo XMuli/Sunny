@@ -14,7 +14,7 @@
 
 Sunny is the third generation: a redesigned screenshot tool that treats text inside images as part of the workflow. Select a region, extract the text, or translate it in place — without sending the image to a server.
 
-The website and the original source history now live together in this repository, so the project page and the code archive stay in sync.
+The website and the original project history now live together in this repository, so the project page and the code archive stay in sync.
 
 ## Highlights
 
@@ -35,7 +35,7 @@ Sunny is archived. On Windows, continue with **SnipArc**.
 | --- | --- |
 | **Website** | https://sunny.xmuli.tech/ |
 | **Archive entry** | https://screenshot-archive.xmuli.tech/sunny/ |
-| **Source** | https://github.com/XMuli/Sunny |
+| **GitHub** | https://github.com/XMuli/Sunny |
 | **Tags** | https://github.com/XMuli/Sunny/tags |
 
 ## The screenshot series

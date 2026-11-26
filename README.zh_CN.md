@@ -14,7 +14,7 @@
 
 Sunny 是系列的第三代：重新设计的界面，把图片里的文字也纳入截图流程。框选、提取文字，或者直接翻译，不需要把图片上传到服务器。
 
-现在网站与原项目源码历史合并在本仓库中，项目页与代码档案可以一起维护。
+现在网站与原项目历史合并在本仓库中，项目页与代码档案可以一起维护。
 
 ## 亮点
 
@@ -35,7 +35,7 @@ Sunny 已归档。Windows 用户可以继续使用 **SnipArc**。
 | --- | --- |
 | **官网** | https://sunny.xmuli.tech/ |
 | **作品档案条目** | https://screenshot-archive.xmuli.tech/sunny/ |
-| **源码** | https://github.com/XMuli/Sunny |
+| **GitHub** | https://github.com/XMuli/Sunny |
 | **标签** | https://github.com/XMuli/Sunny/tags |
 
 ## 截图作品系列

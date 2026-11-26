@@ -33,7 +33,7 @@ Sunny is archived. On Windows, continue with **SnipArc**.
 
 | | |
 | --- | --- |
-| **Project archive** | https://sunny.xmuli.tech/ |
+| **Website** | https://sunny.xmuli.tech/ |
 | **Archive entry** | https://screenshot-archive.xmuli.tech/sunny/ |
 | **Source** | https://github.com/XMuli/Sunny |
 | **Tags** | https://github.com/XMuli/Sunny/tags |

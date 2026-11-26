@@ -33,7 +33,7 @@ Sunny 已归档。Windows 用户可以继续使用 **SnipArc**。
 
 | | |
 | --- | --- |
-| **项目归档页** | https://sunny.xmuli.tech/ |
+| **官网** | https://sunny.xmuli.tech/ |
 | **作品档案条目** | https://screenshot-archive.xmuli.tech/sunny/ |
 | **源码** | https://github.com/XMuli/Sunny |
 | **标签** | https://github.com/XMuli/Sunny/tags |

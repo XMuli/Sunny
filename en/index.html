@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sunny brought a redesigned interface and added the ability to extract and translate text in screenshots. Thank you for using it, sharing it, or taking a moment to tell us what could be better.">
+  <title>Sunny farewell · Mosuzo Studio</title>
+  <link rel="stylesheet" href="farewell.css">
+  <script>
+    const route = window.location.hash;
+    if (route === "#/zh-cn" || route === "#/zh-cn/") {
+      window.location.replace("zh-cn/index.html");
+    } else if (route.startsWith("#/") && route !== "#/") {
+      window.location.replace("legacy-site.html" + route);
+    }
+  </script>
+  <link rel="canonical" href="https://sunny.xmuli.tech/en/">
+  <link rel="alternate" hreflang="zh-CN" href="https://sunny.xmuli.tech/">
+</head>
+<body class="legacy sunny">
+<header class="top wrap">
+  <a class="wordmark" href="index.html"><span class="logo-mark" aria-hidden="true"></span>Mosuzo Studio</a>
+  <nav aria-label="Page navigation"><a class="language" href="../index.html" lang="zh-CN">简体中文</a></nav>
+</header>
+<main class="wrap">
+  <section class="legacy-hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span>Sunny · A note from Sunny</p>
+      <h1>Remember a little<br>tool called Sunny?</h1>
+      <p class="lead">Sunny brought a redesigned interface and added the ability to extract and translate text in screenshots. Thank you for using it, sharing it, or taking a moment to tell us what could be better.</p>
+      <p class="follow">Sunny is now archived. On Windows, you can keep capturing and annotating in SnipArc.</p>
+      <div class="actions"><a class="button" href="https://sniparc.mosuzo.com/download">Go to SnipArc downloads<span aria-hidden="true">↗</span></a></div>
+    </div>
+    <figure class="art postcard"><div class="sun-scene" aria-hidden="true"><i></i><b></b><span></span></div><figcaption><strong>Sunny</strong><span>Thanks for using Sunny.</span></figcaption></figure>
+  </section>
+  <details class="archive-links">
+    <summary>Explore historical builds and source</summary>
+    <p>If you use macOS or Linux, browse the preserved version tags for historical source.</p>
+    <div><a href="https://github.com/XMuli/Sunny/tags">Historical version tags<span aria-hidden="true">↗</span></a><a href="https://github.com/XMuli/Sunny">Source<span aria-hidden="true">↗</span></a><a href="legacy-site.html#/">Legacy documentation<span aria-hidden="true">↗</span></a></div>
+  </details>
+</main>
+<footer class="footer wrap"><span>© <a href="https://github.com/XMuli">XMuli</a> · All rights reserved.</span></footer>
+</body>
+</html>

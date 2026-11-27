@@ -66,6 +66,11 @@ Sunny is archived. On Windows, continue with **SnipArc**.
 ShotX → FLIPPED → Sunny → SunnyCapturer → SnipArc.  
 [Full visual archive](https://screenshot-archive.xmuli.tech/)
 
+## License
+
+Original project code in this repository is available under the [MIT License](./LICENSE). Third-party components retain their own licenses.
+License notices bundled with historical installers are retained as release records.
+
 ## Contact
 
 - **Mosuzo Studio** — https://mosuzo.com/

@@ -36,6 +36,18 @@ Sunny 是系列的第三代：重新设计的界面，把图片里的文字也�
 - 全新 UI/UX，设置面板无缝衔接
 - 上架 Microsoft Store、深度/统信商店与星火商店
 
+## 历史截图
+
+点击截图可查看原图。
+
+### Sunny 2.x 开发记录
+
+<p><a href="./assets/source-archive/image-20240809122245213.png"><img src="./assets/source-archive/image-20240809122245213.png" width="400" alt="Sunny 2.x 开发记录 截图 1"></a> <a href="./assets/source-archive/image-20240809122251844.png"><img src="./assets/source-archive/image-20240809122251844.png" width="400" alt="Sunny 2.x 开发记录 截图 2"></a></p>
+
+<p><a href="./assets/source-archive/image-20240809153051696.png"><img src="./assets/source-archive/image-20240809153051696.png" width="400" alt="Sunny 2.x 开发记录 截图 3"></a> <a href="./assets/source-archive/image-20240830234828082.png"><img src="./assets/source-archive/image-20240830234828082.png" width="400" alt="Sunny 2.x 开发记录 截图 4"></a></p>
+
+[历史源码 README](https://github.com/SunnyCapturer/sunny-screenshot/blob/3c91d95/README.md)
+
 ## 状态
 
 Sunny 已归档。Windows 用户可以继续使用 **SnipArc**。

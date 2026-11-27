@@ -36,6 +36,18 @@ The website and the original project history now live together in this repositor
 - Redesigned UI/UX with seamless settings panels
 - Listed in Microsoft Store, Deepin/UOS stores and Spark Store
 
+## Historical screenshots
+
+Select a screenshot to view the original.
+
+### Sunny 2.x development archive
+
+<p><a href="./assets/source-archive/image-20240809122245213.png"><img src="./assets/source-archive/image-20240809122245213.png" width="400" alt="Sunny 2.x development archive screenshot 1"></a> <a href="./assets/source-archive/image-20240809122251844.png"><img src="./assets/source-archive/image-20240809122251844.png" width="400" alt="Sunny 2.x development archive screenshot 2"></a></p>
+
+<p><a href="./assets/source-archive/image-20240809153051696.png"><img src="./assets/source-archive/image-20240809153051696.png" width="400" alt="Sunny 2.x development archive screenshot 3"></a> <a href="./assets/source-archive/image-20240830234828082.png"><img src="./assets/source-archive/image-20240830234828082.png" width="400" alt="Sunny 2.x development archive screenshot 4"></a></p>
+
+[Historical source README](https://github.com/SunnyCapturer/sunny-screenshot/blob/3c91d95/README.md)
+
 ## Status
 
 Sunny is archived. On Windows, continue with **SnipArc**.
